@@ -3,9 +3,20 @@
 <html>
 
 <head>
-	<title>Resales</title>
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<link href="stylesheet.css" rel="stylesheet" type="text/css" />
+  <title>Resales</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <link href="stylesheet.css" rel="stylesheet" type="text/css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js" type="text/javascript"></script>
+  <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js" type="text/javascript"></script>
+  <script type="text/javascript">
+       $(function(){
+             $('.fadein img:gt(0)').hide();
+             setInterval(function(){$('.fadein :first-child').fadeOut().next('img').fadeIn().end().appendTo('.fadein');}, 3000);
+       })
+  </script>
+  <style type="text/css">
+              td { width: 1200px; vertical-align: top; }
+  </style>
 </head>
 
 <body class = "en">
@@ -27,9 +38,12 @@
 
 
     <div id="content">
-        <p></p>
+    <table>
+      <tbody style="font-size: 14px;">
+        <tr>
+          <td>
         <h2>Resales</h2>
-        <p><img src="images/image1.jpg" width="330" height="228" align="right" alt="" />
+
        <table bgcolor="white" border="1" cellpadding="5">
        <tr><th style="width:200px">Street Address</th>
            <th style="width:200px">Model</th>
@@ -45,8 +59,14 @@
           <tr><td>15236 Callaway Court</td><td><a href="floorplans/Bella Via.pdf">NV Homes Bella Via</a></td><td><a href="http://fusion.realtourvision.com/317921" target="_blank" style="target-new: tab;">Listing</a></td><td>Active</td></tr>
        
           <tr><td>15240 Callaway Court</td><td><a href="floorplans/Severn.pdf">NV Homes Severn</a></td><td><a href="https://www.coldwellbankerhomes.com/md/glenwood/15240-callaway-court/pid_11788167/" target="_blank" style="target-new: tab;">Listing</a></td><td>Active</td></tr>
-
-       </table>
+	      
+   </table>
+          <td>
+        <p><img src="images/image1.jpg" width="330" height="228" align="right" alt="" />		  
+          </td>
+        </tr>
+      </tbody>
+    </table>
        
     <p><a href="unit.html">Model Floorplans</a></p>  
     <p></p>
