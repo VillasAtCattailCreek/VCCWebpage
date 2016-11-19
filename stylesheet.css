@@ -34,7 +34,7 @@ h3 {
         font-weight: 100;
 }
 
-td { width: 540; vertical-align: top; }
+td { width: 50%; vertical-align: top; }
 
 img { width: 540; height: 400; right: 0px; border: 5px; border-color: #ccc; }
 /* ul li { margin-bottom: 6px; } */
