@@ -33,7 +33,8 @@ h3 {
 		padding: 1px 0 1px 25px;  /* top right bottom left */
         font-weight: 100;
 }
- 
+
+td { width: 1200px; vertical-align: top; }
 /* ul li { margin-bottom: 6px; } */
 
 .nav ul {
