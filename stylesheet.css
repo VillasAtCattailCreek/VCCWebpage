@@ -36,7 +36,19 @@ h3 {
 
 td { width: 540; vertical-align: top; }
 
-img { width: 540; height: 400; right: 0px; border: 8px; border-color: #ccc; }
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.item {
+    width: 540px;
+    height: 400px;
+    height: auto;
+    float: left;
+    margin: 3px;
+    padding: 3px;
+}
 /* ul li { margin-bottom: 6px; } */
 
 .nav ul {
