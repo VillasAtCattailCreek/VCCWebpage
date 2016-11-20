@@ -10,8 +10,14 @@
 	<script type="text/javascript" src="test.js"></script>
    	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 	<script type="text/javascript" src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
-
-	<style type="text/css">
+    <script type="text/javascript">
+      $(function(){
+                $('.fadein img:gt(0)').hide();
+                setInterval(function(){$('.fadein :first-child').fadeOut().next('img').fadeIn().end().appendTo('.fadein');}, 3000);
+                })
+    </script>
+    
+    	<style type="text/css">
 	   img {
 		width: 1020;
 		height: 574;
@@ -20,6 +26,7 @@
 		padding: 3px;
 		}   
 	</style>	
+
     </head>
 
 <body class = "en">
@@ -38,7 +45,7 @@
 			<li class="resales"><a href="resales.html">Resales</a></li>
 		</ul>
 	</div>
-  	<p></p><div style="position: Left:300px; width:600px; height:25px; color:white; font-style:italic"><font size="6">The Good Life Starts Here</font></div><p></p><p></p>
+  	<font color="white" style="italic;" size="6">The Good Life Starts Here</font>
 	
  	<div class="fadein">
 	   <img src="images/img_0001.jpg" alt="">
@@ -71,7 +78,7 @@
     <!-- Common Bottom -->
   
     <div style="position: absolute; top:740px; left:10px; ">
-   <small>Website hosted on GitHub</small></div>
+   <font size="2">Website hosted on GitHub</font></div>
 
 </body>
 </html>
